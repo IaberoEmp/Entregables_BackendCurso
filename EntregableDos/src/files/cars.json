@@ -1,0 +1,22 @@
+[
+	{
+		"modelo": "HB20",
+		"marca": "Hyundai",
+		"id": 1
+	},
+	{
+		"modelo": "Onix",
+		"marca": "Chevrolet",
+		"id": 2
+	},
+	{
+		"modelo": "Celerio",
+		"marca": "Susuki",
+		"id": 4
+	},
+	{
+		"modelo": "Celerio",
+		"marca": "Susuki",
+		"id": 5
+	}
+]
