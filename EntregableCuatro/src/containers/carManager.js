@@ -1,7 +1,11 @@
-const fs = require('fs');
-const path = "./src/files/cars.json"
+//Para trabjar con require en lugar de import / export
+//const fs = require('fs');
+//const path = "./src/files/cars.json"
 
-class CarsManager{
+import fs from 'fs';
+const path = "./src/files/cars.json";
+
+export class CarsManager{
     getAllCars = async() =>{
         try {
             if(fs.existsSync(path)){
@@ -74,4 +78,4 @@ class CarsManager{
     } 
 }
 
-module.exports = CarsManager;
+//module.exports = CarsManager;

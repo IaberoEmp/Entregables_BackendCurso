@@ -1,7 +1,7 @@
-//import express from 'express';
-//import {CarsManager} from './containers/carManager.js';
-const express = require('express')
-const CarsManager = require('./containers/carManager.js')
+import express from 'express';
+import {CarsManager} from './containers/carManager.js';
+//const express = require('express')
+//const CarsManager = require('./containers/carManager.js')
 
 const app=express()
 const nCarManager=new CarsManager();
@@ -33,3 +33,5 @@ app.get('/productoRandom', async (req, res) => {
     const randomProduct = allProducts[randomIndex]
     res.send(randomProduct)
 })
+
+
