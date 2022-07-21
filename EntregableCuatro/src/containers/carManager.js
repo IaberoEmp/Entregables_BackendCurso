@@ -5,7 +5,7 @@
 import fs from 'fs';
 const path = "./src/files/cars.json";
 
-export class CarsManager{
+class CarsManager{
     getAllCars = async() =>{
         try {
             if(fs.existsSync(path)){
@@ -78,4 +78,4 @@ export class CarsManager{
     } 
 }
 
-//module.exports = CarsManager;
+export default CarsManager;
