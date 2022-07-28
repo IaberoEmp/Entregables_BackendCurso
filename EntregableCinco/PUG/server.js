@@ -1,7 +1,7 @@
 const express = require('express');
 const products = require('./api/productos');
 const router = express.Router();
-// const handlebars = require('express-handlebars');
+
 
 // App Express
 const app = express();
@@ -30,24 +30,9 @@ app.get('/', (req, res) => {
 app.use('/api', router);
 
 
-//////////////////////////////////////////////////////////////////////////////////
-////         SERVER ON PORT
-//////////////////////////////////////////////////////////////////////////////////
-const PORT = Math.floor(Math.random() * (8099 - 8000)) + 8000
+const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`Server running on: http://localhost:${server.address().port}/`)
-    // console.log(    path.join(__dirname, '../public')   )
+
 })
 server.on('error', (error) => console.log(`Server error: ${error}`))
-//////////////////////////////////////////////////////////////////////////////////
-
-
-// // Server
-// const PORT = 4000;
-
-// const server = app.listen(PORT, () => {
-//     console.log(`Servidor escuchando en el puerto ${PORT}`)
-// })
-// server.on('error', (error) => {
-//     console.log('Error en el servidor ', error)
-// })

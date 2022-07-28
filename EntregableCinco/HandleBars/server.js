@@ -97,13 +97,11 @@ router.delete('/productos/borrar/:id', (req, res) => {
     }
 })
 
-//////////////////////////////////////////////////////////////////////////////////
-////         SERVER ON PORT
-//////////////////////////////////////////////////////////////////////////////////
-const PORT = Math.floor(Math.random() * (8099 - 8000)) + 8000
+
+const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`Server running on: http://localhost:${server.address().port}/`)
     // console.log(    path.join(__dirname, '../public')   )
 })
 server.on('error', (error) => console.log(`Server error: ${error}`))
-//////////////////////////////////////////////////////////////////////////////////
+
