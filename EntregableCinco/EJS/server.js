@@ -42,7 +42,6 @@ app.get('/productos/vista', (req, res) => {
     }
 })
 
-// app.use('/api', router);
 
 router.get('/productos/listar', (req, res) => {
 
@@ -97,7 +96,6 @@ router.delete('/productos/borrar/:id', (req, res) => {
 const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`Server running on: http://localhost:${server.address().port}/`)
-    // console.log(    path.join(__dirname, '../public')   )
 })
 server.on('error', (error) => console.log(`Server error: ${error}`))
 
